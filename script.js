@@ -1,6 +1,7 @@
-function enterShop() {
-    document.getElementById("welcome-screen").style.display = "none";
-    document.getElementById("main-site").style.display = "block";
+// MENU MOBILE
+function toggleMenu() {
+    const menuTitles = document.querySelector('.menu-titles');
+    menuTitles.classList.toggle('active');
 }
 
 function scrollToProducts() {

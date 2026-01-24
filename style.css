@@ -1,7 +1,14 @@
-        body {
+:root {
+    --primary-color: #4A088C;
+    --secondary-color: #865FD9;
+    --background-color: #AEA7D9;
+    --text-color: #120540;
+}
+
+body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #AEA7D9;
+    background: var(--background-color);
     color: #4A088C;
 }
 
@@ -9,7 +16,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #865FD9;
+    background: var(--secondary-color);
     padding: 15px 40px;
 }
 
@@ -21,6 +28,14 @@ header a {
 
 .logo {
     font-size: 22px;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu-btn a {
+    font-size: 24px;
 }
 
 #welcome-screen {
@@ -43,10 +58,6 @@ header a {
     cursor: pointer;
     margin-top: 20px;
     border-radius: 8px;
-}
-
-#main-site {
-    display: none;
 }
 
 .hero {
@@ -97,4 +108,25 @@ th, td {
 
 button {
     cursor: pointer;
+}
+
+/* Affichage mobile */
+@media (max-width: 768px) {
+    .menu-titles {
+        display: none;
+    }
+
+    .menu-titles.active {
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: var(--secondary-color);
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
 }

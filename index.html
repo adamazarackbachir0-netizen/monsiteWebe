@@ -7,11 +7,6 @@
 </head>
 <body>
 <!-- ÉCRAN D’ACCUEIL -->
-<div id="welcome-screen">
-    <h1>Bienvenue sur Royal Shopping 🛍️</h1>
-    <h1>cliquez sur le bouton ci-dessous pour commencer</h1>
-    <button onclick="enterShop()">Entrer dans la boutique</button>
-</div>
 
 <!-- SITE COMPLET (CACHÉ AU DÉPART) -->
 <div id="main-site">
@@ -19,12 +14,15 @@
     <!-- HEADER -->
     <header>
         <h2 class="logo">Royal Shopping</h2>
-        <nav>
+        <nav class="menu-titles">
             <a href="#">Accueil</a>
             <a href="#products">Montres Femme</a>
             <a href="#products">Montres Homme</a>
             <a href="#products">Bracelets</a>
             <a href="#cart">🛒 Panier</a>
+        </nav>
+        <nav class="menu-btn" id="menuBtn" onclick="toggleMenu()">
+            <a href="#">☰</a>
         </nav>
     </header>
 
