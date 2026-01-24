@@ -1,0 +1,68 @@
+function enterShop() {
+    document.getElementById("welcome-screen").style.display = "none";
+    document.getElementById("main-site").style.display = "block";
+}
+
+function scrollToProducts() {
+    document.getElementById("products").scrollIntoView({ behavior: "smooth" });
+}
+
+// PANIER
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+function addToCart(name, price) {
+    const product = cart.find(item => item.name === name);
+    if (product) product.quantity++;
+    else cart.push({ name, price, quantity: 1 });
+    localStorage.setItem("cart", JSON.stringify(cart));
+    displayCart();
+}
+
+function displayCart() {
+    const cartItems = document.getElementById("cart-items");
+    const cartTotal = document.getElementById("cart-total");
+    cartItems.innerHTML = "";
+    let total = 0;
+
+    cart.forEach((item, index) => {
+        const itemTotal = item.price * item.quantity;
+        total += itemTotal;
+        cartItems.innerHTML += `
+            <tr>
+                <td>${item.name}</td>
+                <td>${item.price} FCFA</td>
+                <td>
+                    <button onclick="changeQuantity(${index}, -1)">-</button>
+                    ${item.quantity}
+                    <button onclick="changeQuantity(${index}, 1)">+</button>
+                </td>
+                <td>${itemTotal} FCFA</td>
+                <td><button onclick="removeItem(${index})">❌</button></td>
+            </tr>
+        `;
+    });
+
+    cartTotal.textContent = total;
+}
+
+function removeItem(index) {
+    cart.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    displayCart();
+}
+
+function changeQuantity(index, value) {
+    cart[index].quantity += value;
+    if (cart[index].quantity <= 0) removeItem(index);
+    else {
+        localStorage.setItem("cart", JSON.stringify(cart));
+        displayCart();
+    }
+}
+
+function goToCheckout() {
+    if (cart.length === 0) alert("Votre panier est vide");
+    else window.location.href = "checkout.html";
+}
+
+displayCart();

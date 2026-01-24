@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Royal Shopping</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #AEA7D9;
+    color: #4A088C;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #865FD9;
+    padding: 15px 40px;
+}
+
+header a {
+    color: #4A088C;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.logo {
+    font-size: 22px;
+}
+
+#welcome-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #AEA7D9;
+    color: #4A088C;
+}
+
+#welcome-screen button {
+    padding: 15px 40px;
+    background: #4A088C;
+    color: #AEA7D9;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#main-site {
+    display: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+.product-card {
+    background: #AEA7D9;
+    color: #120540;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cart {
+    background: #AEA7D9;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #727FA6;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+
+<!-- ÉCRAN D’ACCUEIL -->
+<div id="welcome-screen">
+    <h1>Bienvenue sur Royal Shopping 🛍️</h1>
+    <h1>cliquez sur le bouton ci-dessous pour commencer</h1>
+    <button onclick="enterShop()">Entrer dans la boutique</button>
+</div>
+
+<!-- SITE COMPLET (CACHÉ AU DÉPART) -->
+<div id="main-site">
+
+    <!-- HEADER -->
+    <header>
+        <h2 class="logo">Royal Shopping</h2>
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#products">Montres Femme</a>
+            <a href="#products">Montres Homme</a>
+            <a href="#products">Bracelets</a>
+            <a href="#cart">🛒 Panier</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Royal Shopping</h1>
+        <p>Découvrez notre sélection exclusive au meilleur prix</p>
+        <button onclick="scrollToProducts()">Voir la boutique</button>
+    </section>
+
+    <!-- PRODUITS -->
+    <section class="products" id="products">
+        <h2>Nos produits</h2>
+
+        <div class="product-card">
+            <img src="femme.jpg" alt="Montre Royale Femme">
+            <img src="femme1.jpg" alt="Montre Royale Femme">
+            <img src="femme2.jpg" alt="Montre Royale Femme">
+            <h3>Montre Royale Femme</h3>
+            <p class="price">15000 FCFA</p>
+            <button onclick="addToCart('Montre Royale Femme', 15000)">Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Montre Royale Homme">
+            <h3>Montre Royale Homme</h3>
+            <p class="price">15000 FCFA</p>
+            <button onclick="addToCart('Montre Royale Homme', 15000)">Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Bracelet Royal">
+            <h3>Bracelet Royal</h3>
+            <p class="price">2500 FCFA</p>
+            <button onclick="addToCart('Bracelet Royal', 2500)">Ajouter au panier</button>
+        </div>
+    </section>
+
+    <!-- PANIER -->
+    <section class="cart" id="cart">
+        <h2>🛒 Panier</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Produit</th>
+                    <th>Prix</th>
+                    <th>Quantité</th>
+                    <th>Total</th>
+                    <th>Action</th>ss
+                </tr>
+            </thead>
+            <tbody id="cart-items"></tbody>
+        </table>
+        <h3>Total général : <span id="cart-total">0</span> FCFA</h3>
+        <label class="name" for="name">Nom complet:</label>
+    <input type="text" id="name" name="name" placeholder="Entrez votre nom complet">
+  <label class="adress" for="adress">Adresse de livraison:</label>
+    <input type="text" id="adress" name="adress" placeholder="Entrez votre adresse">
+    <label class="phone" for="phone">Numéro de téléphone:</label>
+    <input type="text" id="phone" name="phone" placeholder="Entrez votre numéro">
+
+        <button onclick="goToCheckout()">Commander (Paiement à la livraison)</button>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
