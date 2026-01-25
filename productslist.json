@@ -20,7 +20,7 @@
     {
         "product_id": 3,
         "name": "Men's and women's bracelet",
-        "price": "8000 FCfA",
+        "price": "2500 FCfA",
         "in_stock": false,
         "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/bracelet.jpg",
         "description": "Classic aviator sunglasses with polarized lenses for UV protection.",
