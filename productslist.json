@@ -1,0 +1,29 @@
+[
+    {
+        "product_id": 1,
+        "name": "mens digital watch",
+        "price": "1500 FCfA",
+        "in_stock": true,
+        "url": "https://github.com/adamazarackbachir0-netizen/monsiteWebe/blob/main/homme.jpg?raw=true",
+        "description": "A classic digital watch with multiple functions including alarm, stopwatch, and backlight.",
+        "category": "Watches"
+    },
+    {
+        "product_id": 2,
+        "name": "Women's watch",
+        "price": "2500 FCfA",
+        "in_stock": true,
+        "url": "https://github.com/adamazarackbachir0-netizen/monsiteWebe/blob/main/femme.jpg?raw=true",
+        "description": "A stylish leather wallet with multiple card slots and a coin pocket.",
+        "category": "Accessories"
+    },
+    {
+        "product_id": 3,
+        "name": "Men's and women's bracelet",
+        "price": "8000 FCfA",
+        "in_stock": false,
+        "url": "https://github.com/adamazarackbachir0-netizen/monsiteWebe/blob/main/bracelet.jpg?raw=true",
+        "description": "Classic aviator sunglasses with polarized lenses for UV protection.",
+        "category": "Sunglasses"
+    }
+]
