@@ -15,11 +15,11 @@
     <header>
         <h2 class="logo">Royal Shopping</h2>
         <nav class="menu-titles">
-            <a href="#">Accueil</a>
-            <a href="#products">Montres Femme</a>
-            <a href="#products">Montres Homme</a>
-            <a href="#products">Bracelets</a>
-            <a href="#cart">🛒 Panier</a>
+            <a class="menu-title" href="#">Accueil</a>
+            <a class="menu-title" href="#products">Montres Femme</a>
+            <a class="menu-title" href="#products">Montres Homme</a>
+            <a class="menu-title" href="#products">Bracelets</a>
+            <a class="menu-title" href="#cart">🛒 Panier</a>
         </nav>
         <nav class="menu-btn" id="menuBtn" onclick="toggleMenu()">
             <a href="#">☰</a>
@@ -30,38 +30,48 @@
     <section class="hero">
         <h1>Royal Shopping</h1>
         <p>Découvrez notre sélection exclusive au meilleur prix</p>
-        <button onclick="scrollToProducts()">Voir la boutique</button>
+        <button class="hero-btn" onclick="scrollToProducts()">Voir nos produits</button>
     </section>
 
     <!-- PRODUITS -->
     <section class="products" id="products">
         <h2>Nos produits</h2>
-
-        <div class="product-card">
-            <img src="femme.jpg" alt="Montre Royale Femme">
-            <img src="femme1.jpg" alt="Montre Royale Femme">
-            <img src="femme2.jpg" alt="Montre Royale Femme">
+        <div class="product-category">
             <h3>Montre Royale Femme</h3>
-            <p class="price">15000 FCFA</p>
-            <button onclick="addToCart('Montre Royale Femme', 15000)">Ajouter au panier</button>
+            <div class="product-card">
+                <div class="product-images">
+                    <img src="femme.jpg" alt="Montre Royale Femme">
+                    <img src="femme1.jpg" alt="Montre Royale Femme">
+                    <img src="femme2.jpg" alt="Montre Royale Femme">
+                </div>
+                <p class="price">15000 FCFA</p>
+                <button onclick="addToCart('Montre Royale Femme', 15000)">Ajouter au panier</button>
+            </div>
         </div>
-
-        <div class="product-card">
-            <img src="homme.jpg" alt="Montre Royale Homme">
-            <img src="homme1.jpg" alt="Montre Royale Homme">
-            <img src="homme2.jpg" alt="Montre Royale Homme">
+        <div class="product-category">
             <h3>Montre Royale Homme</h3>
-            <p class="price">15000 FCFA</p>
-            <button onclick="addToCart('Montre Royale Homme', 15000)">Ajouter au panier</button>
+            <div class="product-card">
+                <div class="product-images">
+                    <img src="homme.jpg" alt="Montre Royale Homme">
+                    <img src="homme1.jpg" alt="Montre Royale Homme">
+                    <img src="homme2.jpg" alt="Montre Royale Homme">
+                </div>
+                <p class="price">15000 FCFA</p>
+                <button onclick="addToCart('Montre Royale Homme', 15000)">Ajouter au panier</button>
+            </div>
         </div>
 
-        <div class="product-card">
-            <img src="bracelet.jpg" alt="Bracelet Royal">
-            <img src="bracelet1.jpg" alt="Bracelet Royal">
-            <img src="bracelet2.jpg" alt="Bracelet Royal">
+        <div class="product-category">
             <h3>Bracelet Royal</h3>
-            <p class="price">2500 FCFA</p>
-            <button onclick="addToCart('Bracelet Royal', 2500)">Ajouter au panier</button>
+            <div class="product-card">
+                <div class="product-images">
+                    <img src="bracelet.jpg" alt="Bracelet Royal">
+                    <img src="bracelet1.jpg" alt="Bracelet Royal">
+                    <img src="bracelet2.jpg" alt="Bracelet Royal">
+                </div>
+                <p class="price">2500 FCFA</p>
+                <button onclick="addToCart('Bracelet Royal', 2500)">Ajouter au panier</button>
+            </div>
         </div>
     </section>
 

@@ -1,8 +1,15 @@
-// MENU MOBILE
 function toggleMenu() {
     const menuTitles = document.querySelector('.menu-titles');
     menuTitles.classList.toggle('active');
 }
+
+document.addEventListener('click', function(event) {
+    const menuTitles = document.querySelector('.menu-titles');
+    const menuBtn = document.querySelector('.menu-btn');
+    if (!menuTitles.contains(event.target) && !menuBtn.contains(event.target)) {
+        menuTitles.classList.remove('active');
+    }
+});
 
 function scrollToProducts() {
     document.getElementById("products").scrollIntoView({ behavior: "smooth" });
