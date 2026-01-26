@@ -28,7 +28,7 @@
     },
     {
         "product_id": 4,
-        "name": "Accessoires montres",
+        "name": "Accessoires",
         "price": "3000 FCfA",
         "in_stock": true,
         "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/accessoires.jpg",
