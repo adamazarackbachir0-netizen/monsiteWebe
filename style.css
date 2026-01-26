@@ -128,6 +128,13 @@ header a {
 
 /* SECTION PRODUITS */
 
+.product {
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
 .products {
     padding: 40px 20px;
     text-align: center;

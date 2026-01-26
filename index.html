@@ -29,12 +29,18 @@
     <section class="hero">
         <h1>Royal Shopping</h1>
         <p>Découvrez notre sélection exclusive au meilleur prix</p>
-        <button class="hero-btn" onclick="scrollToProducts()">Voir nos produits</button>
+        <section id="products" style="display:block;">
     </section>
 
     <!-- PRODUITS -->
-    <section class="products" id="products" style="display:none;">
+   <section class="products" id="products">
     <h2>Nos produits</h2>
+
+    <div id="category-filters"></div>
+
+    <div id="products-container"></div>
+</section>
+<section class="products" id="products"></section>
 
     <!-- Boutons de filtre par catégorie -->
     <div id="category-filters">
