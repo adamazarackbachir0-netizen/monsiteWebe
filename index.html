@@ -25,22 +25,15 @@
         </nav>
     </header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <h1>Royal Shopping</h1>
-        <p>Découvrez notre sélection exclusive au meilleur prix</p>
-        <section id="products" style="display:block;">
-    </section>
-
-    <!-- PRODUITS -->
-   <section class="products" id="products">
-    <h2>Nos produits</h2>
-
-    <div id="category-filters"></div>
-
-    <div id="products-container"></div>
+   <!-- HERO -->
+<section class="hero">
+    <h1>Royal Shopping</h1>
+    <p>Découvrez notre sélection exclusive au meilleur prix</p>
 </section>
-<section class="products" id="products"></section>
+
+<!-- PRODUITS -->
+<section class="products" id="products" style="display:block;">
+    <h2>Nos produits</h2>
 
     <!-- Boutons de filtre par catégorie -->
     <div id="category-filters">
@@ -51,14 +44,8 @@
         <button onclick="filterProducts('accessoires')">Accessoires</button>
     </div>
 
-    <div id="products-container">
-        <div class="product" data-category="montres-femme">Produit 1 - Montre Femme</div>
-        <div class="product" data-category="montres-homme">Produit 2 - Montre Homme</div>
-        <div class="product" data-category="bracelets">Produit 3 - Bracelet</div>
-        <div class="product" data-category="accessoires">Produit 4 - Accessoire</div>
-        <div class="product" data-category="montres-femme">Produit 5 - Montre Femme</div>
-        <!-- Ajoutez d'autres produits ici -->
-    </div>
+    <!-- Conteneur où les produits seront insérés dynamiquement -->
+    <div id="products-container"></div>
 </section>
 
 </div>
