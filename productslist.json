@@ -6,7 +6,7 @@
         "in_stock": true,
         "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/homme.jpg",
         "description": "A classic digital watch with multiple functions including alarm, stopwatch, and backlight.",
-        "category": "Watches"
+        "category": "montres-homme"
     },
     {
         "product_id": 2,
@@ -15,7 +15,7 @@
         "in_stock": true,
         "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/femme.jpg",
         "description": "A stylish leather wallet with multiple card slots and a coin pocket.",
-        "category": "Accessories"
+        "category": "montres-femme"
     },
     {
         "product_id": 3,
@@ -24,7 +24,7 @@
         "in_stock": false,
         "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/bracelet.jpg",
         "description": "Classic aviator sunglasses with polarized lenses for UV protection.",
-        "category": "Sunglasses"
+        "category": "bracelets"
     },
     {
         "product_id": 4,
@@ -33,6 +33,6 @@
         "in_stock": true,
         "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/accessoires.jpg",
         "description": "A stylish leather wallet with multiple card slots and a coin pocket.",
-        "category": "Accessories"
+        "category": "accessoires"
     }
 ]

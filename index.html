@@ -33,14 +33,28 @@
     </section>
 
     <!-- PRODUITS -->
-    <section class="products" id="products">
-        <h2>Nos produits</h2>
-        <div id="products-container">
-            
-        </div>
+    <section class="products" id="products" style="display:none;">
+    <h2>Nos produits</h2>
 
-    </section>
- 
+    <!-- Boutons de filtre par catégorie -->
+    <div id="category-filters">
+        <button onclick="filterProducts('all')">Tous</button>
+        <button onclick="filterProducts('montres-femme')">Montres Femme</button>
+        <button onclick="filterProducts('montres-homme')">Montres Homme</button>
+        <button onclick="filterProducts('bracelets')">Bracelets</button>
+        <button onclick="filterProducts('accessoires')">Accessoires</button>
+    </div>
+
+    <div id="products-container">
+        <div class="product" data-category="montres-femme">Produit 1 - Montre Femme</div>
+        <div class="product" data-category="montres-homme">Produit 2 - Montre Homme</div>
+        <div class="product" data-category="bracelets">Produit 3 - Bracelet</div>
+        <div class="product" data-category="accessoires">Produit 4 - Accessoire</div>
+        <div class="product" data-category="montres-femme">Produit 5 - Montre Femme</div>
+        <!-- Ajoutez d'autres produits ici -->
+    </div>
+</section>
+
 </div>
 
 <script src="script.js"></script>
