@@ -2,59 +2,131 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Royal Shopping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Shopping - Montres & Accessoires</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- SITE COMPLET (CACHÉ AU DÉPART) -->
-<div id="main-site">
-
     <!-- HEADER -->
     <header>
-        <h2 class="logo">Royal Shopping</h2>
-        <nav class="menu-titles">
-            <a class="menu-title" href="#">Accueil</a>
-            <a class="menu-title" href="#products">Montres Femme</a>
-            <a class="menu-title" href="#products">Montres Homme</a>
-            <a class="menu-title" href="#products">Bracelets</a>
-            <a class="menu-title" href="#products">Accessoires</a>
-            <a class="menu-title" href="#cart">🛒 Panier</a>
-        </nav>
-        <nav class="menu-btn" id="menuBtn" onclick="toggleMenu()">
-            <a href="#">☰</a>
-        </nav>
+        <div class="container header-content">
+            <h2 class="logo">Royal Shopping</h2>
+            <nav class="menu-titles" id="menuNav">
+                <a class="menu-title" href="#accueil" onclick="showSection('accueil')">Accueil</a>
+                <a class="menu-title" href="#products" onclick="showSection('products')">Produits</a>
+                <a class="menu-title" href="#contact" onclick="showSection('contact')">Contact</a>
+                <a class="menu-title cart-link" href="#cart" onclick="showSection('cart')">
+                    🛒 Panier <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+            </nav>
+            <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
 
-   <!-- HERO -->
-<section class="hero">
-    <h1>Royal Shopping</h1>
-    <p>Découvrez notre sélection exclusive au meilleur prix</p>
-</section>
+    <!-- HERO SECTION -->
+    <section class="hero" id="accueil">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Bienvenue chez Royal Shopping</h1>
+                <p>Découvrez notre collection exclusive de montres et accessoires au meilleur prix</p>
+                <button class="hero-btn" onclick="showSection('products')">Découvrir nos produits</button>
+            </div>
+        </div>
+    </section>
 
-<!-- PRODUITS -->
-<section class="products" id="products" style="display:block;">
-    <h2>Nos produits</h2>
+    <section class="products-section" id="products">
+        <div class="container">
+            <h2 class="section-title">Nos Produits</h2>
 
-    <!-- Boutons de filtre par catégorie -->
-    <div id="category-filters">
-        <button onclick="filterProducts('all')">Tous</button>
-        <button onclick="filterProducts('montres-femme')">Montres Femme</button>
-        <button onclick="filterProducts('montres-homme')">Montres Homme</button>
-        <button onclick="filterProducts('bracelets')">Bracelets</button>
-        <button onclick="filterProducts('accessoires')">Accessoires</button>
-    </div>
+            <div class="category-filters" id="categoryFilters">
+                <button class="filter-btn active" onclick="filterProducts('all')">Tous</button>
+                <button class="filter-btn" onclick="filterProducts('montres-femme')">Montres Femme</button>
+                <button class="filter-btn" onclick="filterProducts('montres-homme')">Montres Homme</button>
+                <button class="filter-btn" onclick="filterProducts('bracelets')">Bracelets</button>
+                <button class="filter-btn" onclick="filterProducts('accessoires')">Accessoires</button>
+            </div>
 
-    <!-- Conteneur où les produits seront insérés dynamiquement -->
-    <div id="products-container"></div>
-</section>
+            <div class="products-grid" id="productsContainer">
+            </div>
+        </div>
+    </section>
 
-</div>
+    <!-- SECTION PANIER -->
+    <section class="cart-section" id="cart" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">Votre Panier</h2>
+            
+            <div class="cart-content">
+                <div id="emptyCart" class="empty-cart">
+                    <div class="empty-cart-icon">🛒</div>
+                    <p>Votre panier est vide</p>
+                    <button class="hero-btn" onclick="showSection('products')">Continuer mes achats</button>
+                </div>
 
-<script src="script.js"></script>
+                <div id="cartItems" class="cart-items" style="display: none;">
+                    <!-- Les articles du panier seront insérés ici -->
+                </div>
+
+                <div id="cartSummary" class="cart-summary" style="display: none;">
+                    <div class="summary-row">
+                        <span>Total des articles:</span>
+                        <span id="totalItems">0</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span id="totalPrice">0 FCFA</span>
+                    </div>
+                    <div class="cart-actions">
+                        <button class="btn-secondary" onclick="clearCart()">Vider le panier</button>
+                        <button class="btn-primary" onclick="sendOrderToWhatsApp()">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section class="contact-section" id="contact" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">Contactez-nous</h2>
+            <div class="contact-content">
+                <div class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <h3>WhatsApp</h3>
+                    <a href="https://wa.me/23566418962" target="_blank">+23566418962</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <a href="mailto:benmahanna07@gmail.com">benmahanna07@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">⏰</div>
+                    <h3>Horaires</h3>
+                    <p>Lundi - Samedi<br>9h00 - 19h00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Royal Shopping. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="#accueil" onclick="showSection('accueil')">Accueil</a>
+                <a href="#products" onclick="showSection('products')">Produits</a>
+                <a href="#contact" onclick="showSection('contact')">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-<h1>Contactez-nous</h1>
-<a href="https://wa.me/+235 62 59 09 02">📱 WhatsApp</a>
-<a href="https://wa.me/+212 7 83 69 83 28">WhatsApp</a>
-<a href="mailto:benmahanna07@gmail.com">📧 benmahanna07@gmail.com</a>
-
 </html>
