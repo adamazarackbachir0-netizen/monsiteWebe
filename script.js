@@ -135,6 +135,7 @@ function displayProducts(productsToDisplay) {
 
         productCard.innerHTML = `
             <img src="${product.url}" alt="${product.name}" class="product-image" onerror="this.src='https://via.placeholder.com/280x250?text=Image+non+disponible'">
+            <span id="total-picture">1/${product.url.length}</span>
             <div class="product-info">
                 <h3 class="product-name">${product.name}</h3>
                 <p class="product-description">${product.description}</p>
@@ -172,6 +173,7 @@ function addToCart(productId) {
             image: product.url,
             quantity: 1
         });
+        
     }
 
     saveCartToStorage();

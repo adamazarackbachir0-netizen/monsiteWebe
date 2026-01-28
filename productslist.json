@@ -11,7 +11,7 @@
     {
         "product_id": 2,
         "name": "Montres femme",
-        "price": "2500 FCfA",
+        "price": "12500 FCfA",
         "in_stock": true,
         "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/femme.jpg",
         "description": "A stylish leather wallet with multiple card slots and a coin pocket.",
@@ -21,7 +21,7 @@
         "product_id": 3,
         "name": "Bracelets unisexe",
         "price": "2500 FCfA",
-        "in_stock": false,
+        "in_stock": true,
         "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/bracelet.jpg",
         "description": "Classic aviator sunglasses with polarized lenses for UV protection.",
         "category": "bracelets"
@@ -32,6 +32,96 @@
         "price": "3000 FCfA",
         "in_stock": true,
         "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/accessoires.jpg",
+        "description": "A stylish leather wallet with multiple card slots and a coin pocket.",
+        "category": "accessoires"
+    }, 
+    {
+    "product_id": 5,
+        "name": "Montres femme",
+        "price": "2500 FCfA",
+        "in_stock": true,
+        "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/femme1.jpg",
+        "description": "A stylish leather wallet with multiple card slots and a coin pocket.",
+        "category": "montres-femme"
+        },
+        {
+          "product_id": 6,
+        "name": "Montres femme",
+        "price": "2500 FCfA",
+        "in_stock": true,
+        "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/femme2%20(1).jpg",
+        "description": "A stylish leather wallet with multiple card slots and a coin pocket.",
+        "category": "montres-femme"  
+        },
+         {
+        "product_id": 7,
+        "name": "Montres femme",
+        "price": "12500 FCfA",
+        "in_stock": true,
+        "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/femme3.jpg",
+        "description": "A stylish leather wallet with multiple card slots and a coin pocket.",
+        "category": "montres-femme"
+    },
+        {
+          "product_id": 8,
+        "name": "Bracelets unisexe",
+        "price": "2500 FCfA",
+        "in_stock": true,
+        "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/bracelet1.jpg",
+        "description": "Classic aviator sunglasses with polarized lenses for UV protection.",
+        "category": "bracelets"  
+        },
+         {
+          "product_id": 9,
+        "name": "Bracelets unisexe",
+        "price": "2500 FCfA",
+        "in_stock": true,
+        "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/bracelet2.jpg",
+        "description": "Classic aviator sunglasses with polarized lenses for UV protection.",
+        "category": "bracelets"
+         },  
+        {
+        "product_id": 10,
+        "name": "Montres homme",
+        "price": "1500 FCfA",
+        "in_stock": true,
+        "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/homme1.jpg",
+        "description": "A classic digital watch with multiple functions including alarm, stopwatch, and backlight.",
+        "category": "montres-homme"
+    },
+     {
+        "product_id": 11,
+        "name": "Montres homme",
+        "price": "1500 FCfA",
+        "in_stock": true,
+        "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/homme2.jpg",
+        "description": "A classic digital watch with multiple functions including alarm, stopwatch, and backlight.",
+        "category": "montres-homme"
+     },
+     {
+        "product_id": 12,
+        "name": "Accessoires",
+        "price": "3000 FCfA",
+        "in_stock": true,
+        "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/accessoires1.jpg",
+        "description": "A stylish leather wallet with multiple card slots and a coin pocket.",
+        "category": "accessoires"
+    },
+    {
+        "product_id": 13,
+        "name": "Accessoires",
+        "price": "3000 FCfA",
+        "in_stock": true,
+        "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/accessoires1.jpg",
+        "description": "A stylish leather wallet with multiple card slots and a coin pocket.",
+        "category": "accessoires"
+    },
+     {
+        "product_id": 14,
+        "name": "Accessoires",
+        "price": "3000 FCfA",
+        "in_stock": true,
+        "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/accessoire2.jpg",
         "description": "A stylish leather wallet with multiple card slots and a coin pocket.",
         "category": "accessoires"
     }
