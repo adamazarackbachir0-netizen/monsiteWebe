@@ -2,7 +2,7 @@
     {
         "product_id": 1,
         "name": "Montres homme",
-        "price": "1500 FCfA",
+        "price": "12000 FCfA",
         "in_stock": true,
         "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/homme.jpg",
         "description": "A classic digital watch with multiple functions including alarm, stopwatch, and backlight.",
@@ -11,7 +11,7 @@
     {
         "product_id": 2,
         "name": "Montres femme",
-        "price": "12500 FCfA",
+        "price": "12000 FCfA",
         "in_stock": true,
         "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/femme.jpg",
         "description": "A stylish leather wallet with multiple card slots and a coin pocket.",
@@ -38,7 +38,7 @@
     {
     "product_id": 5,
         "name": "Montres femme",
-        "price": "2500 FCfA",
+        "price": "12000 FCfA",
         "in_stock": true,
         "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/femme1.jpg",
         "description": "A stylish leather wallet with multiple card slots and a coin pocket.",
@@ -47,7 +47,7 @@
         {
           "product_id": 6,
         "name": "Montres femme",
-        "price": "2500 FCfA",
+        "price": "12000 FCfA",
         "in_stock": true,
         "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/femme2%20(1).jpg",
         "description": "A stylish leather wallet with multiple card slots and a coin pocket.",
@@ -56,7 +56,7 @@
          {
         "product_id": 7,
         "name": "Montres femme",
-        "price": "12500 FCfA",
+        "price": "12000 FCfA",
         "in_stock": true,
         "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/femme3.jpg",
         "description": "A stylish leather wallet with multiple card slots and a coin pocket.",
@@ -83,7 +83,7 @@
         {
         "product_id": 10,
         "name": "Montres homme",
-        "price": "1500 FCfA",
+        "price": "12000 FCfA",
         "in_stock": true,
         "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/homme1.jpg",
         "description": "A classic digital watch with multiple functions including alarm, stopwatch, and backlight.",
@@ -92,7 +92,7 @@
      {
         "product_id": 11,
         "name": "Montres homme",
-        "price": "1500 FCfA",
+        "price": "12000 FCfA",
         "in_stock": true,
         "url": "https://gnvdprqbkmzruwpxtxxf.supabase.co/storage/v1/object/public/products-img-montre/homme2.jpg",
         "description": "A classic digital watch with multiple functions including alarm, stopwatch, and backlight.",
